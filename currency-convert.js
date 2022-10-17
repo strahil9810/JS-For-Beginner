@@ -1,4 +1,4 @@
-function currencyConvert([valute1, valute2, sum]){
+function currencyConvert([sum, valute1, valute2]){
     let valuta = valute1;
     let valuta1 = valute2;
     var suma = parseFloat(sum);
@@ -51,4 +51,5 @@ function currencyConvert([valute1, valute2, sum]){
         suma = ((suma * 2.53405) / 1.95583).toFixed(2);
         console.log(`${suma} EUR`);
     }
-}currencyConvert(["USD", "EUR", 150.35])
+}
+currencyConvert([150.23, "USD", "EUR"])
